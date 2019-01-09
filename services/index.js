@@ -11,6 +11,26 @@ const response = ( status, data, res ) => {
 	res.send( JSON.stringify( data ) )
 }
 
+router.get('/', async(req, res) => {
+  try {
+    const result = await Cinemas.find({},{cinemaID:1, movie:1, timestamp:1}).sort({timestamp:1}).limit(500).lean()
+    response( 200, result, res)
+  } catch (e) {
+    logger(e)
+    response( 400, {error: 'error_fetching_data'}, res)
+  }
+})
+
+router.get('/all_history', async(req, res) => {
+  try {
+    const result = await Histories.find({},{cinemaID:1, movie:1, timestamp:1}).sort({timestamp:1}).limit(500).lean()
+    response( 200, result, res)
+  } catch (e) {
+    logger(e)
+    response( 400, {error: 'error_fetching_data'}, res)
+  }
+})
+
 router.get('/:key', async(req, res) => {
   try {
     const cinemaID = req.params.key.toLowerCase()

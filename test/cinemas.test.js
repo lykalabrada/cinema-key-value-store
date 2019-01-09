@@ -33,4 +33,14 @@ describe( 'CINEMA MOVIES', () => {
     expect( response2.status ).toEqual( 200 )
     expect( response2.data.cinema1 ).toEqual('the purge')
   })
+  test('GET ALL CINEMAS', async() => {
+    const response = await axios.get('http://localhost:5000/v1/cinema/')
+    expect( response.status ).toEqual( 200 )
+    expect( response.data.length ).toBeGreaterThanOrEqual(1)
+  })
+  test('GET ALL CINEMA HISTORY', async() => {
+    const response = await axios.get('http://localhost:5000/v1/cinema/all_history')
+    expect( response.status ).toEqual( 200 )
+    expect( response.data.length ).toBeGreaterThanOrEqual(2)
+  })
 })
