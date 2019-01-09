@@ -1,0 +1,48 @@
+07:00:11 - error:  TypeError: (intermediate value).getTimee is not a function
+    at router.post (D:\Test Projects\vault-dragon\services\index.js:36:36)
+    at Layer.handle [as handle_request] (D:\Test Projects\vault-dragon\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Test Projects\vault-dragon\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Test Projects\vault-dragon\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Test Projects\vault-dragon\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Test Projects\vault-dragon\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:317:13)
+    at D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:275:10)
+    at D:\Test Projects\vault-dragon\node_modules\body-parser\lib\read.js:130:5
+07:01:02 - error:  ReferenceError: Cinemass is not defined
+    at router.post (D:\Test Projects\vault-dragon\services\index.js:39:22)
+    at Layer.handle [as handle_request] (D:\Test Projects\vault-dragon\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Test Projects\vault-dragon\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Test Projects\vault-dragon\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Test Projects\vault-dragon\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Test Projects\vault-dragon\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:317:13)
+    at D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Test Projects\vault-dragon\node_modules\express\lib\router\index.js:275:10)
+    at D:\Test Projects\vault-dragon\node_modules\body-parser\lib\read.js:130:5
+08:48:14 - error:  CastError: Cast to number failed for value "undefined" at path "timestamp" for model "histories"
+    at new CastError (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\error\cast.js:29:11)
+    at SchemaNumber.cast (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\schema\number.js:301:11)
+    at SchemaNumber.SchemaType.applySetters (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\schematype.js:845:12)
+    at SchemaNumber.SchemaType._castForQuery (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\schematype.js:1248:15)
+    at SchemaNumber.castForQuery (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\schema\number.js:353:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\schematype.js:1217:15)
+    at cast (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\cast.js:307:32)
+    at model.Query.Query.cast (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\query.js:4257:12)
+    at model.Query.Query._castConditions (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\query.js:1722:10)
+    at model.Query.Query._findOne (D:\Test Projects\vault-dragon\node_modules\mongoose\lib\query.js:1960:8)
+    at process.nextTick (D:\Test Projects\vault-dragon\node_modules\kareem\index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)

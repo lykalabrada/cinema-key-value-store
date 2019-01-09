@@ -1,0 +1,29 @@
+{
+  "name": "vault-dragon",
+  "version": "1.0.0",
+  "description": "A key-value store exam with Vault Dragon",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest test"
+  },
+  "author": "Lyka Labrada",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.2",
+    "winston": "^2.4.1",
+    "winston-daily-rotate-file": "^3.2.3"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
